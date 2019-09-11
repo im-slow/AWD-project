@@ -40,7 +40,7 @@ $router->group(['prefix' => 'api/v1', 'middleware' => 'auth'], function () use (
 
     //Routes for resource user
     $router->get('logout', 'UsersController@LogOut');
-    $router->put('updateRole', 'UsersController@updateRole');
+    $router->put('update-role', 'UsersController@updateRole');
     $router->delete('remove/{id}', 'UsersController@remove');
 
     //Routes for resource poll
